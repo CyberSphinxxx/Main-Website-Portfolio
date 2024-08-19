@@ -1,4 +1,11 @@
 /* General Styles */
+:root {
+  --primary-color: #333;
+  --secondary-color: #ff8e8e;
+  --text-color: #fff;
+  --hover-color: #ff0000;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,11 +17,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: 5px 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-image: url(img/headerBG.jpg);
 }
 
 nav ul {
@@ -26,7 +34,7 @@ nav ul {
 }
 
 nav ul li:hover {
-  background-color: #ff0000;
+  background-color: var(--hover-color);
   border-radius: 5px;
 }
 
@@ -36,16 +44,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 20px;
 }
 
 .intro {
-  padding: 50px 0;
+  padding: 250px 0;
   background: url('background.jpg') no-repeat center center;
   background-size: cover;
-  color: white;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -62,6 +70,7 @@ nav ul li a {
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .intro h1 {
   font-size: 48px;
   margin-bottom: 10px;
@@ -80,6 +89,7 @@ h2 {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 30px;
+  letter-spacing: 2px;
 }
 
 .project-list {
@@ -90,13 +100,19 @@ h2 {
 }
 
 .project {
-  background-color: #ff8e8e;
+  background-color: var(--secondary-color);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 .project-content {
@@ -111,15 +127,16 @@ h2 {
 }
 
 .project-image {
-    width: 35%; 
-    height: auto;
-    border-radius: 5px;
-    margin-left: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 35%; 
+  height: auto;
+  border-radius: 5px;
+  margin-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
   margin-top: 0;
+  font-size: 24px;
 }
 
 .skills-list {
@@ -132,9 +149,10 @@ h2 {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   border-radius: 5px;
+  font-size: 18px;
 }
 
 #contact-form {
@@ -152,20 +170,51 @@ h2 {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 #contact-form button {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: 10px 20px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: var(--hover-color);
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro {
+    padding: 100px 0;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+}

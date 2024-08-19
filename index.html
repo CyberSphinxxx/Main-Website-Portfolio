@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Lemar Gonzales' creative portfolio showcasing projects, skills, and contact information.">
     <title>My Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,61 +11,60 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/CyberSphinxxx" target="_blank">Github</a></li>
+                <li><a href="#intro" aria-label="Home">Home</a></li>
+                <li><a href="#projects" aria-label="Projects">Projects</a></li>
+                <li><a href="#skills" aria-label="Skills">Skills</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                <li><a href="https://github.com/CyberSphinxxx" target="_blank" aria-label="Github Profile">Github</a></li>
             </ul>
         </nav>
     </header>
 
-        <div class="intro">
-            <img src="img/profilepic.jpg" alt="jlgonz" class="profile-image" title="John Lemar Gonzales">
-            <h1>Welcome to My Portfolio</h1>
-            <p>
-              I'm <b>John Lemar Gonzales</b>, I'm a passionate learner in the field of IT, always eager to explore new technologies and work on exciting projects.
-            </p>
-        </div>
-
+    <div class="intro">
+        <img src="img/profilepic.jpg" alt="John Lemar Gonzales' profile picture" class="profile-image" title="John Lemar Gonzales">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+            I'm <b>John Lemar Gonzales</b>, a passionate learner in the field of IT, always eager to explore new technologies and work on exciting projects.
+        </p>
+    </div>
 
     <section id="projects">
         <h2>My Projects</h2>
 
-        <div class="project-list">  <!-- Online 3D Touring -->
-          <div class="project">
-              <div class="project-content">
-                  <div class="project-description">
-                      <h3>Project 1</h3>
-                      <p>Online 3D Touring for City Museum of CDO</p>
-                      <a href="https://www.roblox.com/games/13258489628/Online-3D-Touring-for-City-Museum-of-CDO">View Project</a>
-                  </div>
-                  <img src="img/Roblox Studio Icon.png" alt="Project 1" class="project-image">
-              </div>
-          </div>
-
-            <div class="project">   <!-- Restaurant Billing System Using C Programming -->
-              <div class="project-content">
-                <div class="project-description">
-                    <h3>Project 2</h3>
-                    <p>Restaurant Billing System Using C Programming</p>
-                    <a href="https://www.roblox.com/games/13258489628/Online-3D-Touring-for-City-Museum-of-CDO">View Project</a>
+        <div class="project-list">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Project 1</h3>
+                        <p>Online 3D Touring for City Museum of CDO</p>
+                        <a href="https://www.roblox.com/games/13258489628/Online-3D-Touring-for-City-Museum-of-CDO" target="_blank">View Project</a>
+                    </div>
+                    <img src="img/Roblox Studio Icon.png" alt="Screenshot of Online 3D Touring Project" class="project-image">
                 </div>
-                <img src="img/C Programming Icon.jpg" alt="Project 1" class="project-image">
             </div>
-        </div>
 
-        <div class="project">   <!-- Customer Billing System Using C Programming -->
-          <div class="project-content">
-            <div class="project-description">
-                <h3>Project 3</h3>
-                <p>Customer Billing System Using C Programming</p>
-                <a href="https://github.com/CyberSphinxxx/CustomerBillingSytemInC">View Project</a>
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Project 2</h3>
+                        <p>Restaurant Billing System Using C Programming</p>
+                        <a href="https://www.roblox.com/games/13258489628/Online-3D-Touring-for-City-Museum-of-CDO" target="_blank">View Project</a>
+                    </div>
+                    <img src="img/C Programming Icon.jpg" alt="Screenshot of Restaurant Billing System Project" class="project-image">
+                </div>
             </div>
-            <img src="img/C Programming Icon.jpg" alt="Project 1" class="project-image">
+
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Project 3</h3>
+                        <p>Customer Billing System Using C Programming</p>
+                        <a href="https://github.com/CyberSphinxxx/CustomerBillingSytemInC" target="_blank">View Project</a>
+                    </div>
+                    <img src="img/C Programming Icon.jpg" alt="Screenshot of Customer Billing System Project" class="project-image">
+                </div>
+            </div>
         </div>
-    </div>
-    
     </section>
 
     <section id="skills">
@@ -80,15 +80,15 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form">
+        <form id="contact-form" method="POST" action="your-form-processing-url">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
 
             <button type="submit">Send Message</button>
         </form>
