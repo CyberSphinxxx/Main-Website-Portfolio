@@ -88,13 +88,13 @@ h2 {
   text-align: center;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 2px;
 }
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -131,7 +131,6 @@ h2 {
   height: auto;
   border-radius: 5px;
   margin-left: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
@@ -165,8 +164,7 @@ h2 {
   margin: 10px 0 5px;
 }
 
-#contact-form input, 
-#contact-form textarea {
+#contact-form input, #contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
