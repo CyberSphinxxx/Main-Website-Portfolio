@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #626262;
+  background-image: url(index_background.jpg) !important;
 }
 
 header {
@@ -55,6 +56,18 @@ nav ul li a {
   background-size: cover;
   color: var(--text-color);
   text-align: center;
+}
+
+.intro:hover{
+  background-color: var(--hover-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: color 0.3s ease;
+  transition: text-align 0.3s ease;
+  transition: background-image 0.3s ease;
+  transition: background-size 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .intro img {
