@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 .intro {
-  padding: 250px 0;
+  padding: 40px 0;
   background: url('background.jpg') no-repeat center center;
   background-size: cover;
   color: var(--text-color);
@@ -63,8 +63,8 @@ nav ul li a {
 }
 
 .profile-image {
-  width: 150px; 
-  height: 150px;
+  width: 250px; 
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
@@ -92,6 +92,14 @@ h2 {
   letter-spacing: 2px;
 }
 
+#my_projects_title{
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+  background-color: white;
+  border-radius: 100px;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,6 +121,7 @@ h2 {
 .project:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  background-color: #ff0000;
 }
 
 .project-content {
@@ -133,13 +142,18 @@ h2 {
   margin-left: 20px;
 }
 
-#skills{
-  font-size: 20px;
-}
 
 .project h3 {
   margin-top: 0;
   font-size: 24px;
+}
+
+#my_skills_title{
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+  background-color: white;
+  border-radius: 100px;
 }
 
 .skills-list {
@@ -156,6 +170,15 @@ h2 {
   color: var(--text-color);
   border-radius: 5px;
   font-size: 18px;
+}
+
+
+#contact_me_title{
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+  background-color: white;
+  border-radius: 100px;
 }
 
 #contact-form {
